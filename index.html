@@ -8,6 +8,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Lib SwiperJS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <!-- Styles CSS -->
     <link rel="stylesheet" href="app/css/main.css" />
     <!-- Favicon -->
@@ -15,7 +17,46 @@
     <title>HomeYou</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__brand">
+            <img src="img/logo.svg" alt="logo homeyou">
+        </div>
+        <nav class="header__navigation">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#home" class="header__link">
+                        Inicio
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#home" class="header__link">
+                        Galeria
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#home" class="header__link">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__icons">
+            <ul class="header__icons-list">
+                <li class="header__icon">
+                    <i class="bi bi-person"></i>
+                </li>
+                <li class="header__icon">
+                    <i class="bi bi-heart"></i>
+                </li>
+                <li class="header__icon">
+                    <i class="bi bi-search"></i>
+                </li>
+                <li class="header__icon">
+                    <img src="img/menu-hamburguer.svg" alt="icon menu hamburger" class="header__btn-menu">
+                </li>
+            </ul>
+        </div>
+    </header>
 
 
     <!-- AOS Scroll -->
