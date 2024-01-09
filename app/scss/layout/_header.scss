@@ -1,0 +1,74 @@
+@use '../base/breakpoints' as media;
+@use '../base/colors' as color;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 3rem 0;
+
+    .header__logo {
+        width: 75%;
+
+        @include media.laptops {
+            width: 100%;
+        }
+    }
+
+    @include media.laptops {
+        .header__container {
+            display: flex;
+            align-items: center;
+            gap: 9rem;
+        }
+    }
+
+    .header__list {
+        display: none;
+
+        @include media.laptops {
+            display: flex;
+            gap: 7rem;
+        }
+
+        .header__link {
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: color.$black-primary;
+            transition: all .3s;
+            font-weight: 500;
+    
+            &:hover {
+                color: color.$hover-links;
+            }
+        }
+    }
+
+    .header__icons-list .header__icon:not(:last-child) {
+        display: none;
+
+        @include media.extraSmallDevices {
+            display: block;
+            transition: all .3s;
+            
+            &:hover {
+                filter: brightness(0) saturate(100%) invert(51%) sepia(22%) saturate(20%) hue-rotate(50deg) brightness(89%) contrast(93%);
+                transform: translateY(-.3rem);
+            }
+        }
+    }
+
+    .header__icons-list {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+
+        .header__icon:last-child {
+            margin-left: 2rem;
+    
+            @include media.laptops {
+                display: none;
+            }
+        }
+    }
+}

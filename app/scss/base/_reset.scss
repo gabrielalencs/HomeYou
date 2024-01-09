@@ -7,6 +7,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 p, h1, h2, h3 {
     line-height: 130%;
 }
@@ -17,4 +21,9 @@ li {
 
 a, button {
     cursor: pointer;
+}
+
+.container {
+    max-width: 130rem;
+    margin: 0 auto;
 }

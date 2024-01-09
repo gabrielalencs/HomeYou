@@ -6,6 +6,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 p, h1, h2, h3 {
   line-height: 130%;
 }
@@ -16,6 +20,78 @@ li {
 
 a, button {
   cursor: pointer;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 3rem 0;
+}
+.header .header__logo {
+  width: 75%;
+}
+@media (min-width: 922px) {
+  .header .header__logo {
+    width: 100%;
+  }
+}
+@media (min-width: 922px) {
+  .header .header__container {
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+  }
+}
+.header .header__list {
+  display: none;
+}
+@media (min-width: 922px) {
+  .header .header__list {
+    display: flex;
+    gap: 7rem;
+  }
+}
+.header .header__list .header__link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #272727;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+.header .header__list .header__link:hover {
+  color: #996f4c;
+}
+.header .header__icons-list .header__icon:not(:last-child) {
+  display: none;
+}
+@media (min-width: 481px) {
+  .header .header__icons-list .header__icon:not(:last-child) {
+    display: block;
+    transition: all 0.3s;
+  }
+  .header .header__icons-list .header__icon:not(:last-child):hover {
+    filter: brightness(0) saturate(100%) invert(51%) sepia(22%) saturate(20%) hue-rotate(50deg) brightness(89%) contrast(93%);
+    transform: translateY(-0.3rem);
+  }
+}
+.header .header__icons-list {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.header .header__icons-list .header__icon:last-child {
+  margin-left: 2rem;
+}
+@media (min-width: 922px) {
+  .header .header__icons-list .header__icon:last-child {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
