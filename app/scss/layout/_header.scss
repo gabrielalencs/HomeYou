@@ -9,7 +9,13 @@
     position: relative;
 
     .header__logo {
-        width: 75%;
+        @include media.mobileDevices {
+            width: 90%;
+        }
+
+        @include media.extraSmallDevices {
+            width: 75%;
+        }
 
         @include media.laptops {
             width: 100%;
@@ -48,6 +54,10 @@
                @include mixin.hoverSvgHeader;
             }
         }
+
+        .header__btn-menu {
+            z-index: 1;
+        }
     }
 
     .header__icons-list {
@@ -64,16 +74,23 @@
     }
 
     // Menu Mobile
+
+    .header__menu-mobile.active {
+        opacity: 1;
+    }
     .header__menu-mobile {
         background-color: color.$black-primary;
         color: color.$white-primary;
+        opacity: 0;
         display: flex;
         flex-direction: column;
         gap: 2rem;
         position: absolute;
         right: 3rem;
-        top: 6.5rem;
+        top: 3rem;
+        z-index: -1;
         padding: 2.5rem;
+        transition: all .5s;
 
         &::after {
             content: "";
