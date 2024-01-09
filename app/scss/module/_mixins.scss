@@ -1,0 +1,22 @@
+@use '../base/colors' as color;
+
+@mixin linkStyleHeader {
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: all .3s;
+    font-weight: 500;
+
+    &:hover {
+        color: color.$hover-links;
+    }
+}
+
+@mixin centerAlignItemsFlex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin hoverSvgHeader {
+    filter: brightness(0) saturate(100%) invert(51%) sepia(22%) saturate(20%) hue-rotate(50deg) brightness(89%) contrast(93%);
+    transform: translateY(-.3rem);
+}

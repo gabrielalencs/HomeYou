@@ -1,11 +1,12 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
+@use '../module/mixins' as mixin;
 
 .header {
-    display: flex;
+    @include mixin.centerAlignItemsFlex;
     justify-content: space-between;
-    align-items: center;
     padding: 2.5rem 3rem 0;
+    position: relative;
 
     .header__logo {
         width: 75%;
@@ -17,8 +18,7 @@
 
     @include media.laptops {
         .header__container {
-            display: flex;
-            align-items: center;
+            @include mixin.centerAlignItemsFlex;
             gap: 9rem;
         }
     }
@@ -32,15 +32,8 @@
         }
 
         .header__link {
-            text-decoration: none;
-            font-size: 1.8rem;
+            @include mixin.linkStyleHeader;
             color: color.$black-primary;
-            transition: all .3s;
-            font-weight: 500;
-    
-            &:hover {
-                color: color.$hover-links;
-            }
         }
     }
 
@@ -50,24 +43,75 @@
         @include media.extraSmallDevices {
             display: block;
             transition: all .3s;
-            
+
             &:hover {
-                filter: brightness(0) saturate(100%) invert(51%) sepia(22%) saturate(20%) hue-rotate(50deg) brightness(89%) contrast(93%);
-                transform: translateY(-.3rem);
+               @include mixin.hoverSvgHeader;
             }
         }
     }
 
     .header__icons-list {
-        display: flex;
-        align-items: center;
+        @include mixin.centerAlignItemsFlex;
         gap: 5rem;
 
         .header__icon:last-child {
             margin-left: 2rem;
-    
+
             @include media.laptops {
                 display: none;
+            }
+        }
+    }
+
+    // Menu Mobile
+    .header__menu-mobile {
+        background-color: color.$black-primary;
+        color: color.$white-primary;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        position: absolute;
+        right: 3rem;
+        top: 6.5rem;
+        padding: 2.5rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            transform: rotate(45deg);
+            top: -.4rem;
+            right: 2rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: #272727;
+        }
+
+        .header__menu-mobile-icons {
+            @include mixin.centerAlignItemsFlex;
+            gap: 3rem;
+            
+            @include media.extraSmallDevices {
+                display: none;
+            }
+
+            svg {
+                filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(104%);
+                transition: all .3s;
+
+                &:hover {
+                    @include mixin.hoverSvgHeader;
+                }
+            }
+        }
+
+        .header__menu-mobile-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .header__menu-mobile-link {
+                @include mixin.linkStyleHeader;
+                color: color.$white-primary;
             }
         }
     }

@@ -29,9 +29,10 @@ a, button {
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 2.5rem 3rem 0;
+  position: relative;
 }
 .header .header__logo {
   width: 75%;
@@ -60,9 +61,9 @@ a, button {
 .header .header__list .header__link {
   text-decoration: none;
   font-size: 1.8rem;
-  color: #272727;
   transition: all 0.3s;
   font-weight: 500;
+  color: #272727;
 }
 .header .header__list .header__link:hover {
   color: #996f4c;
@@ -92,6 +93,60 @@ a, button {
   .header .header__icons-list .header__icon:last-child {
     display: none;
   }
+}
+.header .header__menu-mobile {
+  background-color: #272727;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  right: 3rem;
+  top: 6.5rem;
+  padding: 2.5rem;
+}
+.header .header__menu-mobile::after {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  top: -0.4rem;
+  right: 2rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #272727;
+}
+.header .header__menu-mobile .header__menu-mobile-icons {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+@media (min-width: 481px) {
+  .header .header__menu-mobile .header__menu-mobile-icons {
+    display: none;
+  }
+}
+.header .header__menu-mobile .header__menu-mobile-icons svg {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(104%);
+  transition: all 0.3s;
+}
+.header .header__menu-mobile .header__menu-mobile-icons svg:hover {
+  filter: brightness(0) saturate(100%) invert(51%) sepia(22%) saturate(20%) hue-rotate(50deg) brightness(89%) contrast(93%);
+  transform: translateY(-0.3rem);
+}
+.header .header__menu-mobile .header__menu-mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.header .header__menu-mobile .header__menu-mobile-list .header__menu-mobile-link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  font-weight: 500;
+  color: #fff;
+}
+.header .header__menu-mobile .header__menu-mobile-list .header__menu-mobile-link:hover {
+  color: #996f4c;
 }
 
 /*# sourceMappingURL=main.css.map */
