@@ -2,7 +2,7 @@
 const containerMenuMobile = document.querySelector(".header__menu-mobile");
 const buttonMenuMobile = document.querySelector(".header__btn-menu");
 
-buttonMenuMobile.addEventListener("click", toggleMenuMobil);
+buttonMenuMobile.addEventListener("click", toggleMenuMobile);
 
 function toggleMenuMobile() {
     containerMenuMobile.classList.toggle("active");
