@@ -37,9 +37,17 @@
             gap: 7rem;
         }
 
+        .header__item {
+            transition: all .3s;
+            
+            &:hover {
+                transform: translateY(-.3rem)
+            }
+        }
+        
         .header__link {
-            @include mixin.linkStyleHeader;
             color: color.$black-primary;
+            @include mixin.linkStyleHeader;
         }
     }
 

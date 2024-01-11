@@ -7,6 +7,8 @@ buttonMenuMobile.addEventListener("click", toggleMenuMobile);
 function toggleMenuMobile() {
     containerMenuMobile.classList.toggle("active");
     containerMenuMobile.style.top = containerMenuMobile.classList.contains("active") ? "6.5rem" : "3rem";
+
+    
 }
 
 window.addEventListener("resize", () => {

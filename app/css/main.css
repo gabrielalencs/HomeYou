@@ -69,12 +69,18 @@ a, button {
     gap: 7rem;
   }
 }
+.header .header__list .header__item {
+  transition: all 0.3s;
+}
+.header .header__list .header__item:hover {
+  transform: translateY(-0.3rem);
+}
 .header .header__list .header__link {
+  color: #272727;
   text-decoration: none;
   font-size: 1.8rem;
   transition: all 0.3s;
   font-weight: 500;
-  color: #272727;
 }
 .header .header__list .header__link:hover {
   color: #996f4c;
