@@ -100,6 +100,8 @@ a, button {
 }
 .header .header__icons-list .header__btn-menu {
   width: 4rem;
+  z-index: 2;
+  position: relative;
 }
 .header .header__icons-list .header__icon:not(:last-child) {
   display: none;
@@ -127,7 +129,7 @@ a, button {
   position: absolute;
   right: 3rem;
   top: 3rem;
-  z-index: -1;
+  z-index: 1;
   padding: 2.5rem;
   transition: all 0.5s;
 }

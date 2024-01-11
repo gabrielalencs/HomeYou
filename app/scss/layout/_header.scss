@@ -65,6 +65,8 @@
 
         .header__btn-menu {
             width: 4rem;
+            z-index: 2;
+            position: relative;
         }
     }
 
@@ -96,7 +98,7 @@
         position: absolute;
         right: 3rem;
         top: 3rem;
-        z-index: -1;
+        z-index: 1;
         padding: 2.5rem;
         transition: all .5s;
 
