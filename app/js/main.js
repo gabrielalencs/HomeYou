@@ -22,7 +22,8 @@ function handleDocumentClick(event) {
     const isClickOnMenuButton = buttonMenuMobile.contains(event.target);
 
     if (!isClickInsideMenu && !isClickOnMenuButton) {
-        toggleMenuMobile();
+        containerMenuMobile.classList.remove("active");
+        containerMenuMobile.style.top = "3rem";
         
         document.removeEventListener("click", handleDocumentClick);
     }

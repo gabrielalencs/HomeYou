@@ -81,12 +81,12 @@
         }
     }
 
-
     // Menu Mobile
 
     .header__menu-mobile.active {
         opacity: 1;
     }
+
     .header__menu-mobile {
         background-color: color.$black-primary;
         color: color.$white-primary;
@@ -134,12 +134,12 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
-
-            .header__menu-mobile-link {
-                @include mixin.linkStyleHeader;
-                font-weight: 400;
-                color: color.$white-primary;
-            }
+        }
+        
+        .header__menu-mobile-link {
+            @include mixin.linkStyleHeader;
+            font-weight: 400;
+            color: color.$white-primary;
         }
     }
 }

@@ -164,7 +164,7 @@ a, button {
   flex-direction: column;
   gap: 2rem;
 }
-.header .header__menu-mobile .header__menu-mobile-list .header__menu-mobile-link {
+.header .header__menu-mobile .header__menu-mobile-link {
   text-decoration: none;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -172,7 +172,7 @@ a, button {
   font-weight: 400;
   color: #fff;
 }
-.header .header__menu-mobile .header__menu-mobile-list .header__menu-mobile-link:hover {
+.header .header__menu-mobile .header__menu-mobile-link:hover {
   color: #996f4c;
 }
 
