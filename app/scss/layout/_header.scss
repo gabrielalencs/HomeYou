@@ -39,12 +39,12 @@
 
         .header__item {
             transition: all .3s;
-            
+
             &:hover {
                 transform: translateY(-.3rem)
             }
         }
-        
+
         .header__link {
             color: color.$black-primary;
             @include mixin.linkStyleHeader;
@@ -76,13 +76,12 @@
             transition: all .3s;
 
             &:hover {
-               @include mixin.hoverSvgHeader;
+                @include mixin.hoverSvgHeader;
             }
         }
     }
 
     // Menu Mobile
-
     .header__menu-mobile.active {
         opacity: 1;
     }
@@ -115,7 +114,7 @@
         .header__menu-mobile-icons {
             @include mixin.centerAlignItemsFlex;
             gap: 3rem;
-            
+
             @include media.extraSmallDevices {
                 display: none;
             }
@@ -135,7 +134,7 @@
             flex-direction: column;
             gap: 2rem;
         }
-        
+
         .header__menu-mobile-link {
             @include mixin.linkStyleHeader;
             font-weight: 400;
