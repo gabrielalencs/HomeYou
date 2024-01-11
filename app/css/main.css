@@ -98,6 +98,9 @@ a, button {
     display: none;
   }
 }
+.header .header__icons-list .header__btn-menu {
+  width: 4rem;
+}
 .header .header__icons-list .header__icon:not(:last-child) {
   display: none;
 }
