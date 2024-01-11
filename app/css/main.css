@@ -85,22 +85,6 @@ a, button {
 .header .header__list .header__link:hover {
   color: #996f4c;
 }
-.header .header__icons-list .header__icon:not(:last-child) {
-  display: none;
-}
-@media (min-width: 481px) {
-  .header .header__icons-list .header__icon:not(:last-child) {
-    display: block;
-    transition: all 0.3s;
-  }
-  .header .header__icons-list .header__icon:not(:last-child):hover {
-    filter: brightness(0) saturate(100%) invert(51%) sepia(22%) saturate(20%) hue-rotate(50deg) brightness(89%) contrast(93%);
-    transform: translateY(-0.3rem);
-  }
-}
-.header .header__icons-list .header__icon:not(:last-child) .header__btn-menu {
-  z-index: 1;
-}
 .header .header__icons-list {
   display: flex;
   align-items: center;
@@ -112,6 +96,19 @@ a, button {
 @media (min-width: 922px) {
   .header .header__icons-list .header__icon:last-child {
     display: none;
+  }
+}
+.header .header__icons-list .header__icon:not(:last-child) {
+  display: none;
+}
+@media (min-width: 481px) {
+  .header .header__icons-list .header__icon:not(:last-child) {
+    display: block;
+    transition: all 0.3s;
+  }
+  .header .header__icons-list .header__icon:not(:last-child):hover {
+    filter: brightness(0) saturate(100%) invert(51%) sepia(22%) saturate(20%) hue-rotate(50deg) brightness(89%) contrast(93%);
+    transform: translateY(-0.3rem);
   }
 }
 .header .header__menu-mobile.active {
@@ -169,6 +166,7 @@ a, button {
   font-size: 1.8rem;
   transition: all 0.3s;
   font-weight: 500;
+  font-weight: 400;
   color: #fff;
 }
 .header .header__menu-mobile .header__menu-mobile-list .header__menu-mobile-link:hover {

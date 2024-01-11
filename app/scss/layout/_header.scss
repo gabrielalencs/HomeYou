@@ -51,23 +51,6 @@
         }
     }
 
-    .header__icons-list .header__icon:not(:last-child) {
-        display: none;
-
-        @include media.extraSmallDevices {
-            display: block;
-            transition: all .3s;
-
-            &:hover {
-               @include mixin.hoverSvgHeader;
-            }
-        }
-
-        .header__btn-menu {
-            z-index: 1;
-        }
-    }
-
     .header__icons-list {
         @include mixin.centerAlignItemsFlex;
         gap: 5rem;
@@ -80,6 +63,20 @@
             }
         }
     }
+
+    .header__icons-list .header__icon:not(:last-child) {
+        display: none;
+
+        @include media.extraSmallDevices {
+            display: block;
+            transition: all .3s;
+
+            &:hover {
+               @include mixin.hoverSvgHeader;
+            }
+        }
+    }
+
 
     // Menu Mobile
 
@@ -136,6 +133,7 @@
 
             .header__menu-mobile-link {
                 @include mixin.linkStyleHeader;
+                font-weight: 400;
                 color: color.$white-primary;
             }
         }
