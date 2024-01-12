@@ -1,5 +1,11 @@
 @use '../base/colors' as color;
 
+@mixin limitContent {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+
 @mixin linkStyleHeader {
     text-decoration: none;
     font-size: 1.8rem;

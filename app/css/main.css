@@ -18,12 +18,6 @@ a, button {
   cursor: pointer;
 }
 
-.container {
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 0 3rem;
-}
-
 .hidden {
   opacity: 0;
 }
@@ -34,6 +28,8 @@ a, button {
   justify-content: space-between;
   padding: 2.5rem 3rem 0;
   position: relative;
+  max-width: 130rem;
+  margin: 0 auto;
 }
 @media (max-width: 481px) {
   .header .header__logo {
@@ -179,13 +175,19 @@ a, button {
 .home {
   margin-top: 3rem;
   background-color: #F9F9F9;
+}
+.home .home__container {
   padding: 4rem 3rem 3rem;
 }
 @media (min-width: 1100px) {
-  .home {
-    padding: 0 3rem;
+  .home .home__container {
+    padding: 0;
     display: flex;
+    justify-content: center;
     gap: 3rem;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3rem;
   }
 }
 .home .home__content {
@@ -202,7 +204,7 @@ a, button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 499px;
+    max-width: 49.9rem;
   }
 }
 .home .home__title {
@@ -284,12 +286,13 @@ a, button {
 }
 @media (min-width: 1100px) {
   .home .home__image-container {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     flex: 1;
   }
   .home .home__image-container .home__image {
+    max-width: 60rem;
     width: 100%;
-    height: 65rem;
   }
 }
 
