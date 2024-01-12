@@ -10,10 +10,6 @@ html {
   font-size: 62.5%;
 }
 
-p, h1, h2, h3 {
-  line-height: 130%;
-}
-
 li {
   list-style-type: none;
 }
@@ -25,6 +21,7 @@ a, button {
 .container {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3rem;
 }
 
 .hidden {
@@ -177,6 +174,123 @@ a, button {
 }
 .header .header__menu-mobile .header__menu-mobile-link:hover {
   color: #996f4c;
+}
+
+.home {
+  margin-top: 3rem;
+  background-color: #F9F9F9;
+  padding: 4rem 3rem 3rem;
+}
+@media (min-width: 1100px) {
+  .home {
+    padding: 0 3rem;
+    display: flex;
+    gap: 3rem;
+  }
+}
+.home .home__content {
+  margin: 0 auto;
+}
+@media (min-width: 668px) {
+  .home .home__content {
+    max-width: 55rem;
+  }
+}
+@media (min-width: 1100px) {
+  .home .home__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 499px;
+  }
+}
+.home .home__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+@media (min-width: 668px) {
+  .home .home__title {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1100px) {
+  .home .home__title {
+    font-size: 4rem;
+  }
+}
+.home .home__description {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 130%;
+  transition: all 0.2s;
+  color: #797979;
+}
+@media (min-width: 668px) {
+  .home .home__description {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1100px) {
+  .home .home__description {
+    font-size: 1.9rem;
+  }
+}
+.home .home__links {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 668px) {
+  .home .home__links {
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+.home .home__button {
+  padding: 1rem 4rem;
+  width: max-content;
+  background-color: #272727;
+  color: #fff;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.home .home__button:hover {
+  background-color: #424242;
+}
+@media (min-width: 668px) {
+  .home .home__button {
+    padding: 1.3rem 4rem;
+  }
+}
+.home .home__link {
+  color: #272727;
+  text-decoration: none;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.home .home__link:hover {
+  color: #996f4c;
+}
+.home .home__image-container {
+  display: none;
+}
+@media (min-width: 1100px) {
+  .home .home__image-container {
+    display: block;
+    flex: 1;
+  }
+  .home .home__image-container .home__image {
+    width: 100%;
+    height: 65rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
