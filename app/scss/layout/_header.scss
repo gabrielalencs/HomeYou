@@ -64,9 +64,9 @@
         }
 
         .header__btn-menu {
-            width: 4rem;
             z-index: 2;
             position: relative;
+            cursor: pointer;
         }
     }
 
@@ -76,6 +76,7 @@
         @include media.extraSmallDevices {
             display: block;
             transition: all .3s;
+            z-index: 2;
 
             &:hover {
                 @include mixin.hoverSvgHeader;

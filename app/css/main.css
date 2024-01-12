@@ -99,9 +99,9 @@ a, button {
   }
 }
 .header .header__icons-list .header__btn-menu {
-  width: 4rem;
   z-index: 2;
   position: relative;
+  cursor: pointer;
 }
 .header .header__icons-list .header__icon:not(:last-child) {
   display: none;
@@ -110,6 +110,7 @@ a, button {
   .header .header__icons-list .header__icon:not(:last-child) {
     display: block;
     transition: all 0.3s;
+    z-index: 2;
   }
   .header .header__icons-list .header__icon:not(:last-child):hover {
     filter: brightness(0) saturate(100%) invert(51%) sepia(22%) saturate(20%) hue-rotate(50deg) brightness(89%) contrast(93%);
