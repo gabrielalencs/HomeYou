@@ -4,9 +4,85 @@
 
 
 .minimalist {
+    padding: 6rem 3rem 10rem;
     @include mixin.limitContent;
+
+    @include media.desktops {
+        padding: 12rem 5rem 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
 
     .minimalist__container-image {
         display: none;
+
+        @include media.desktops {
+            display: flex;
+
+            .minimalist__image {
+                box-shadow: -5rem -5rem 0px color.$black-primary;
+                width: 95%;
+            }
+        }
+    }
+
+    .minimalist__content {
+        text-align: center;
+
+        @include media.desktops {
+            text-align: left;
+        }
+    }
+
+    .minimalist__info {
+        text-align: left;
+        background-color: color.$black-primary;
+        border-radius: .3rem;
+        color: color.$white-primary;
+        padding: 2rem;
+        margin-bottom: 2.5rem;
+        max-width: 45.0rem;
+        margin: 0 auto 2.5rem;
+
+        @include media.smallTablets {
+            text-align: center;
+            max-width: 55rem;
+        }
+
+        @include media.desktops {
+            text-align: left;
+        }
+
+        .minimalist__title {
+            font-size: 2.2rem;
+            transition: all .2s;
+
+            @include media.smallTablets {
+                font-size: 2.4rem;
+            }
+        }
+
+        .minimalist__description {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            transition: all .2s;
+
+            @include media.smallTablets {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    .minimalist__link {
+        color: color.$black-primary;
+        font-size: 1.7rem;
+        font-weight: 500;
+        transition: all .2s;
+
+        &:hover {
+            color: color.$hover-links;
+        }
     }
 }

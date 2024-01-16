@@ -9,6 +9,10 @@
     position: relative;
     @include mixin.limitContent;
 
+    @include media.desktops {
+        padding: 2.5rem 5rem 0;
+    }
+
     .header__logo {
         @include media.mobileDevices {
             width: 90%;
