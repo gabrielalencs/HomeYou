@@ -24,7 +24,7 @@ function handleDocumentClick(event) {
     if (!isClickInsideMenu && !isClickOnMenuButton) {
         containerMenuMobile.classList.remove("active");
         containerMenuMobile.style.top = "3rem";
-        
+
         document.removeEventListener("click", handleDocumentClick);
     }
 }
@@ -33,9 +33,33 @@ function handleDocumentClick(event) {
 function handleWindowResize() {
     if (window.innerWidth > 922) {
         toggleMenuMobile();
-        
+
         window.removeEventListener("resize", handleWindowResize);
     } else {
         updateContainerTopStyle();
     }
 }
+
+
+// Swiper JS
+
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        200: {
+            slidesPerView: 1,
+        },
+        420: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        700: {
+            slidesPerView: 3,
+        }
+    }
+});
