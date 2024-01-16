@@ -1,0 +1,12 @@
+@use '../base/breakpoints' as media;
+@use '../base/colors' as color;
+@use '../module/mixins' as mixin;
+
+
+.minimalist {
+    @include mixin.limitContent;
+
+    .minimalist__container-image {
+        display: none;
+    }
+}

@@ -200,7 +200,7 @@ a, button {
 }
 @media (min-width: 1100px) {
   .home .home__content {
-    max-width: 49.9rem;
+    width: 53%;
   }
 }
 .home .home__title {
@@ -289,6 +289,14 @@ a, button {
     max-width: 60rem;
     width: 90%;
   }
+}
+
+.minimalist {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.minimalist .minimalist__container-image {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
