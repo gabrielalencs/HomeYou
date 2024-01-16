@@ -1,0 +1,58 @@
+@use '../base/breakpoints' as media;
+@use '../base/colors' as color;
+@use '../module/mixins' as mixin;
+
+.footer {
+    background-color: color.$background-containers;
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+        padding: 5rem 3rem;
+        @include mixin.limitContent;
+
+        @include media.extraSmallDevices {
+            column-gap: 10rem;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @include media.smallTablets {
+            justify-content: space-evenly;
+        }
+
+    }
+
+    .footer__image {
+        display: none;
+        cursor: pointer;
+
+        @include media.laptops {
+            display: block;
+        }
+    }
+
+    .footer__subtitle {
+        color: color.$black-primary;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .footer__item {
+            font-size: 1.5rem;
+            transition: all .2s;
+            cursor: pointer;
+
+            &:hover {
+                color: color.$hover-links;
+            }
+        }
+    }
+}

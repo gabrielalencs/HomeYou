@@ -499,4 +499,56 @@ a, button {
   color: #fff;
 }
 
+.footer {
+  background-color: #F9F9F9;
+}
+.footer .footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  padding: 5rem 3rem;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+@media (min-width: 481px) {
+  .footer .footer__container {
+    column-gap: 10rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 668px) {
+  .footer .footer__container {
+    justify-content: space-evenly;
+  }
+}
+.footer .footer__image {
+  display: none;
+  cursor: pointer;
+}
+@media (min-width: 922px) {
+  .footer .footer__image {
+    display: block;
+  }
+}
+.footer .footer__subtitle {
+  color: #272727;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.footer .footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .footer__list .footer__item {
+  font-size: 1.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.footer .footer__list .footer__item:hover {
+  color: #996f4c;
+}
+
 /*# sourceMappingURL=main.css.map */
