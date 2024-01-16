@@ -45,20 +45,20 @@ function handleWindowResize() {
 
 const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 20,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
     breakpoints: {
-        200: {
+        50: {
             slidesPerView: 1,
         },
-        420: {
+        481: {
             slidesPerView: 2,
             spaceBetween: 20
         },
-        700: {
+        668: {
             slidesPerView: 3,
         }
     }

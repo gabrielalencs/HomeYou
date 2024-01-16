@@ -182,7 +182,7 @@ a, button {
   background-color: #F9F9F9;
 }
 .home .home__container {
-  padding: 4rem 3rem 3rem;
+  padding: 4rem 3rem 5rem;
 }
 @media (min-width: 1100px) {
   .home .home__container {
@@ -292,18 +292,18 @@ a, button {
   }
   .home .home__image-container .home__image {
     max-width: 60rem;
-    width: 90%;
+    width: 100%;
   }
 }
 
 .minimalist {
-  padding: 6rem 3rem 10rem;
+  padding: 7rem 3rem;
   max-width: 130rem;
   margin: 0 auto;
 }
 @media (min-width: 1100px) {
   .minimalist {
-    padding: 12rem 5rem 7rem;
+    padding: 12rem 10rem 7rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -378,6 +378,81 @@ a, button {
 }
 .minimalist .minimalist__link:hover {
   color: #996f4c;
+}
+
+.gallery {
+  background-color: #F9F9F9;
+}
+.gallery .gallery__container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 6rem 3rem;
+}
+@media (min-width: 1100px) {
+  .gallery .gallery__container {
+    padding: 6rem 5rem;
+  }
+}
+.gallery .gallery__content {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.gallery .gallery_title {
+  font-size: 2.5rem;
+  transition: all 0.2;
+  font-weight: 600;
+}
+@media (min-width: 668px) {
+  .gallery .gallery_title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1100px) {
+  .gallery .gallery_title {
+    font-size: 3rem;
+  }
+}
+.gallery .gallery__description {
+  font-size: 1.5rem;
+  color: #797979;
+  font-weight: 500;
+  transition: all 0.2;
+  margin: 1.5rem auto 0;
+  max-width: 42rem;
+}
+@media (min-width: 668px) {
+  .gallery .gallery__description {
+    font-size: 1.7rem;
+    max-width: 49rem;
+  }
+}
+@media (min-width: 1100px) {
+  .gallery .gallery__description {
+    font-size: 1.8rem;
+    max-width: 55rem;
+  }
+}
+.gallery .swiper {
+  height: auto;
+}
+.gallery .gallery__image {
+  width: 100%;
+}
+.gallery .swiper-pagination {
+  bottom: 1px;
+  left: -6px;
+  width: auto;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.gallery .swiper-pagination .swiper-pagination-bullet {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.gallery .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #272727;
 }
 
 /*# sourceMappingURL=main.css.map */

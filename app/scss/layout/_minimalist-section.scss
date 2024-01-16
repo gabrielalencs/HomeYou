@@ -4,11 +4,11 @@
 
 
 .minimalist {
-    padding: 6rem 3rem 10rem;
+    padding: 7rem 3rem;
     @include mixin.limitContent;
 
     @include media.desktops {
-        padding: 12rem 5rem 7rem;
+        padding: 12rem 10rem 7rem;
         display: flex;
         align-items: center;
         justify-content: center;

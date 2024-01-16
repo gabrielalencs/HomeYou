@@ -1,3 +1,82 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
 @use '../module/mixins' as mixin;
+
+.gallery {
+    background-color: color.$background-containers;
+    
+    .gallery__container {
+        @include mixin.limitContent;
+        padding: 6rem 3rem;
+
+        @include media.desktops {
+            padding: 6rem 5rem;
+        }
+    }
+
+    .gallery__content {
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
+
+    .gallery_title {
+        font-size: 2.5rem;
+        transition: all .2;
+        font-weight: 600;
+
+        @include media.smallTablets {
+            font-size: 3rem;
+        }
+
+        @include media.desktops {
+            font-size: 3rem;
+        }
+    }
+
+    .gallery__description {
+        font-size: 1.5rem;
+        color: color.$gray-primary;
+        font-weight: 500;
+        transition: all .2;
+        margin: 1.5rem auto 0;
+        max-width: 42.0rem;
+
+        @include media.smallTablets {
+            font-size: 1.7rem;
+            max-width: 49rem;
+        }
+
+        @include media.desktops {
+            font-size: 1.8rem;
+            max-width: 55rem;
+        }
+    }
+
+    .swiper {
+        height: auto;
+    }
+
+    .gallery__image {
+        width: 100%;
+    }
+
+    .swiper-pagination {
+        bottom: 1px;
+        left: -6px;
+        width: auto;
+        padding: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .swiper-pagination-bullet {
+            width: 2.5rem;
+            height: 2.5rem;
+
+            &-active {
+                background-color: color.$black-primary;
+            }
+        }
+    }
+
+}
