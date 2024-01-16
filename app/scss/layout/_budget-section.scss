@@ -3,7 +3,7 @@
 @use '../module/mixins' as mixin;
 
 .budget {
-    padding: 4rem 3rem;
+    padding: 6rem 3rem;
     text-align: center;
     @include mixin.limitContent;
 

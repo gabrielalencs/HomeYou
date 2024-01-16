@@ -7,10 +7,10 @@
     
     .gallery__container {
         @include mixin.limitContent;
-        padding: 6rem 3rem 1rem;
+        padding: 5rem 3rem 1rem;
 
         @include media.desktops {
-            padding: 6rem 5rem;
+            padding: 5rem;
         }
     }
 
