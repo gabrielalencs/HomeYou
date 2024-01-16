@@ -92,6 +92,7 @@
     // Menu Mobile
     .header__menu-mobile.active {
         opacity: 1;
+        pointer-events: all;
     }
 
     .header__menu-mobile {
@@ -104,9 +105,9 @@
         position: absolute;
         right: 3rem;
         top: 3rem;
-        z-index: 1;
         padding: 2.5rem;
         transition: all .5s;
+        pointer-events: none;
 
         &::after {
             content: "";

@@ -1,14 +1,28 @@
 const containerMenuMobile = document.querySelector(".header__menu-mobile");
 const buttonMenuMobile = document.querySelector(".header__btn-menu");
+const linksMenuMobile = document.querySelectorAll(".header__menu-mobile .header__menu-mobile-link");
 
 buttonMenuMobile.addEventListener("click", toggleMenuMobile);
 
 function toggleMenuMobile() {
     containerMenuMobile.classList.toggle("active");
+
+    if(!containerMenuMobile.classList.contains("active")) {
+        
+    } 
+    
     updateContainerTopStyle();
+    handleClickLink();
 
     document.addEventListener("click", handleDocumentClick);
     window.addEventListener("resize", handleWindowResize);
+}
+
+// handles clicks on mobile menu links
+function handleClickLink(event) {
+    linksMenuMobile.forEach((link) => {
+        link.addEventListener("click", toggleMenuMobile);
+    });
 }
 
 function updateContainerTopStyle() {
@@ -23,19 +37,14 @@ function handleDocumentClick(event) {
 
     if (!isClickInsideMenu && !isClickOnMenuButton) {
         containerMenuMobile.classList.remove("active");
-        containerMenuMobile.style.top = "3rem";
-
-        document.removeEventListener("click", handleDocumentClick);
+        updateContainerTopStyle();
     }
 }
 
 // handle window resizing to close mobile menu
 function handleWindowResize() {
     if (window.innerWidth > 922) {
-        toggleMenuMobile();
-
-        window.removeEventListener("resize", handleWindowResize);
-    } else {
+        containerMenuMobile.classList.remove("active");
         updateContainerTopStyle();
     }
 }

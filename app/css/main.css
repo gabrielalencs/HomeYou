@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 li {
@@ -117,6 +118,7 @@ a, button {
 }
 .header .header__menu-mobile.active {
   opacity: 1;
+  pointer-events: all;
 }
 .header .header__menu-mobile {
   background-color: #272727;
@@ -128,9 +130,9 @@ a, button {
   position: absolute;
   right: 3rem;
   top: 3rem;
-  z-index: 1;
   padding: 2.5rem;
   transition: all 0.5s;
+  pointer-events: none;
 }
 .header .header__menu-mobile::after {
   content: "";
@@ -375,6 +377,7 @@ a, button {
   font-size: 1.7rem;
   font-weight: 500;
   transition: all 0.2s;
+  text-decoration: underline;
 }
 .minimalist .minimalist__link:hover {
   color: #996f4c;

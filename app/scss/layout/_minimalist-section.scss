@@ -80,6 +80,7 @@
         font-size: 1.7rem;
         font-weight: 500;
         transition: all .2s;
+        text-decoration: underline;
 
         &:hover {
             color: color.$hover-links;
