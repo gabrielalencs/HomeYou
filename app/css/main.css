@@ -386,7 +386,7 @@ a, button {
 .gallery .gallery__container {
   max-width: 130rem;
   margin: 0 auto;
-  padding: 6rem 3rem;
+  padding: 6rem 3rem 1rem;
 }
 @media (min-width: 1100px) {
   .gallery .gallery__container {
