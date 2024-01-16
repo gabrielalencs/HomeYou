@@ -455,4 +455,48 @@ a, button {
   background-color: #272727;
 }
 
+.budget {
+  padding: 4rem 3rem;
+  text-align: center;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.budget .budget__title {
+  font-size: 2.3rem;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+@media (min-width: 668px) {
+  .budget .budget__title {
+    font-size: 3rem;
+  }
+}
+.budget .budget__description {
+  margin: 1.5rem auto 3rem;
+  font-size: 1.6rem;
+  color: #797979;
+  max-width: 48rem;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+@media (min-width: 668px) {
+  .budget .budget__description {
+    font-size: 2rem;
+    max-width: 55rem;
+  }
+}
+.budget .budget__button {
+  padding: 1.2rem 3.2rem;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  transition: all 0.3s;
+  border: 2px solid #272727;
+}
+.budget .budget__button:hover {
+  background-color: #272727;
+  color: #fff;
+}
+
 /*# sourceMappingURL=main.css.map */
