@@ -59,6 +59,7 @@
     .header__icons-list {
         @include mixin.centerAlignItemsFlex;
         gap: 5rem;
+        cursor: pointer;
 
         .header__icon:last-child {
             margin-left: 2rem;

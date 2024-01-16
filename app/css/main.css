@@ -93,6 +93,7 @@ a, button {
   display: flex;
   align-items: center;
   gap: 5rem;
+  cursor: pointer;
 }
 .header .header__icons-list .header__icon:last-child {
   margin-left: 2rem;
