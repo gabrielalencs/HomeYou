@@ -13,7 +13,8 @@
         @include media.desktops {
             padding: 0;
             display: flex;
-            justify-content: center;
+            align-items: center;
+            
             gap: 3rem;
             @include mixin.limitContent;
             padding: 0 3rem;
@@ -28,10 +29,6 @@
         }
 
         @include media.desktops {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             max-width: 49.9rem;
         }
     }
@@ -109,13 +106,11 @@
 
         @include media.desktops {
             display: flex;
-            justify-content: flex-end;
-            flex: 1;
-            // height: 80rem;
+            width: 45%;
             
             .home__image {
                 max-width: 60rem;
-                width: 100%;
+                width: 90%;
             }
         }
     }
