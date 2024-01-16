@@ -7,7 +7,7 @@
 <h4 align="center"><a href="https://homeyou.vercel.app/">Clique para visitar o projeto</a></h4>
 
 
- <h3>HomeYou é uma landing page para ajudar na venda de residências da empresa.</h3>
+ <h3>HomeYou é uma landing page para ajudar na venda de residências</h3>
 
  <h2>Tecnologias Utilizadas 💻</h2>
  
