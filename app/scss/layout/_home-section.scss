@@ -6,7 +6,7 @@
 .home {
     margin-top: 3rem;
     background-color: color.$background-containers;
- 
+
     .home__container {
         padding: 4rem 3rem 5rem;
 
@@ -106,7 +106,7 @@
         @include media.desktops {
             display: flex;
             width: 45%;
-            
+
             .home__image {
                 max-width: 60rem;
                 width: 100%;

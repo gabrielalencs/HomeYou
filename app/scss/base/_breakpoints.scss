@@ -27,9 +27,3 @@
         @content
     }
 }
-
-@mixin extraLargeScreens {
-    @media (min-width: 1920px) {
-        @content
-    }
-}

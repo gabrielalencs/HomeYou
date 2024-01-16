@@ -6,11 +6,6 @@ buttonMenuMobile.addEventListener("click", toggleMenuMobile);
 
 function toggleMenuMobile() {
     containerMenuMobile.classList.toggle("active");
-
-    if(!containerMenuMobile.classList.contains("active")) {
-        
-    } 
-    
     updateContainerTopStyle();
     handleClickLink();
 
