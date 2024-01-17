@@ -562,4 +562,18 @@ a, button {
   color: #996f4c;
 }
 
+.scroll-up-button {
+  background-color: transparent;
+  position: fixed;
+  right: 24px;
+  bottom: 14px;
+  z-index: 3;
+}
+.scroll-up-button a {
+  color: #272727;
+}
+.scroll-up-button i {
+  font-size: 5rem;
+}
+
 /*# sourceMappingURL=main.css.map */

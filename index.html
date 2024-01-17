@@ -8,6 +8,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Lib SwiperJS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <!-- Styles CSS -->
     <link rel="stylesheet" href="app/css/main.css" />
     <!-- Favicon -->
@@ -15,7 +17,7 @@
     <title>HomeYou</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__brand" data-aos="flip-left" data-aos-duration="1000">
             <img src="img/logo.svg" alt="logo homeyou" class="header__logo">
         </div>
@@ -209,9 +211,15 @@
         <button class="budget__button">Entre em contato</button>
     </section>
 
+    <div class="scroll-up-button"  data-aos="zoom-in-up" data-aos-duration="1000">
+        <a href="#header" title="Header Scroll Button">
+            <i class="bi bi-arrow-up-circle-fill"></i>
+        </a>
+    </div>
+
     <footer class="footer">
         <div class="footer__container">
-            <div class="footer__col footer__image" data-aos="fade-down" data-aos-duration="40">
+            <div class="footer__col footer__image" data-aos="fade-down" data-aos-duration="400">
                 <img src="img/logo-footer.svg" alt="logo empresa">
             </div>
 

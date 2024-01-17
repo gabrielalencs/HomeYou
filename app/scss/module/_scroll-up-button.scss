@@ -1,0 +1,18 @@
+@use '../base/colors' as color;
+@use '../base/breakpoints' as media;
+
+.scroll-up-button {
+    background-color: transparent;
+    position: fixed;
+    right: 24px;
+    bottom: 14px;
+    z-index: 3;
+
+    a {
+        color: color.$black-primary;
+    }
+
+    i {
+        font-size: 5rem;
+    }
+}
