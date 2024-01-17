@@ -188,6 +188,7 @@ a, button {
 .home {
   margin-top: 3rem;
   background-color: #F9F9F9;
+  overflow-x: hidden;
 }
 .home .home__container {
   padding: 4rem 3rem 5rem;

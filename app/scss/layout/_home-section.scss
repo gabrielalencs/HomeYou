@@ -6,6 +6,7 @@
 .home {
     margin-top: 3rem;
     background-color: color.$background-containers;
+    overflow-x: hidden;
 
     .home__container {
         padding: 4rem 3rem 5rem;
