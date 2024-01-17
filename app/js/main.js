@@ -36,7 +36,7 @@ function removeAnimation() {
     if(containerMenuMobile.classList.contains("active")) {
         homeContent.removeAttribute("data-aos");
     } else {
-        homeContent.setAttribute("data-aos");
+        homeContent.setAttribute("data-aos", "fade-right");
     }
 }
 
