@@ -68,6 +68,7 @@ function handleWindowResize() {
 
 const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
+    grabCursor: true,
     spaceBetween: 20,
     pagination: {
         el: ".swiper-pagination",
