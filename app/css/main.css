@@ -123,7 +123,7 @@ a, button {
   }
 }
 .header .header__menu-mobile.active {
-  opacity: 1;
+  opacity: 10;
   pointer-events: all;
 }
 .header .header__menu-mobile {
@@ -134,11 +134,12 @@ a, button {
   flex-direction: column;
   gap: 2rem;
   position: absolute;
-  right: 3rem;
-  top: 3rem;
+  top: 1rem;
+  right: 0;
   padding: 2.5rem;
   transition: all 0.5s;
   pointer-events: none;
+  z-index: 3;
 }
 .header .header__menu-mobile::after {
   content: "";
