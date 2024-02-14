@@ -16,3 +16,4 @@
  - JavaScript
  - SCSS
  - Swiper JS
+ - AOS Scroll
