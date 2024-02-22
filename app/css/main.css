@@ -6,6 +6,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background-color: red;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -448,7 +452,6 @@ a, button {
 }
 .gallery .gallery__image {
   width: 100%;
-  cursor: grab;
 }
 .gallery .swiper-pagination {
   bottom: 1px;
